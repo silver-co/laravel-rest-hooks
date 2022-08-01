@@ -1,0 +1,43 @@
+{
+  "name": "silver-co/laravel-rest-hooks",
+  "description": "Package that handles subscribing, deleting, and firing REST Hooks.",
+  "keywords": [
+    "laravel",
+    "package",
+    "rest",
+    "hooks"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Daniel Rodriguez",
+      "email": "boss_silver@outlook.es"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "illuminate/contracts": "^9.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^7.0",
+    "guzzlehttp/guzzle": "^7.0",
+    "phpunit/phpunit": "^9.5",
+    "nunomaduro/larastan": "^2.1",
+    "laravel/pint": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "SilverCO\\RestHooks\\Database\\Factories\\": "database/factories",
+      "SilverCO\\RestHooks\\Database\\Migrations\\": "database/migrations",
+      "SilverCO\\RestHooks\\Tests\\": "tests/",
+      "SilverCO\\RestHooks\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "SilverCO\\RestHooks\\ServiceProvider"
+      ]
+    }
+  }
+}
